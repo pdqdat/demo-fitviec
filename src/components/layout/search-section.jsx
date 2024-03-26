@@ -27,15 +27,15 @@ const trendingNow = [
 
 const SearchSection = () => {
     return (
-        <div className="bg-linear-gradient py-8">
+        <div className="bg-linear-gradient py-16">
             <Container>
                 <h1 className="text-2xl font-bold text-background">
                     1,031 IT Jobs For "Chất" Developers
                 </h1>
 
-                <div className="mt-8 flex">
+                <div className="mt-8 grid grid-cols-5 gap-x-2">
                     <Select>
-                        <SelectTrigger className="w-[180px]">
+                        <SelectTrigger>
                             <SelectValue
                                 placeholder={
                                     <div className="flex items-center">
@@ -60,9 +60,10 @@ const SearchSection = () => {
                     <Input
                         type="text"
                         placeholder="Enter keyword skill (Java, iOS,...), job title, company,..."
+                        className="col-span-3"
                     />
 
-                    <Button size="lg">
+                    <Button>
                         <Search className="mr-2" />
                         Search
                     </Button>
@@ -75,7 +76,7 @@ const SearchSection = () => {
                         <Badge
                             key={index}
                             variant="outline"
-                            className="text-lg font-normal text-background"
+                            className="border-muted-foreground text-lg font-normal text-background"
                         >
                             {item}
                         </Badge>

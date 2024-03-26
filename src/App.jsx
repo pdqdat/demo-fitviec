@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import Container from "@/components/layout/container";
-import SearchSection from "./components/layout/search-form";
+import SearchSection from "./components/layout/search-section";
 
 function App() {
     return (
