@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 
 // Assets
 import Logo from "../../assets/logo-itviec.webp";
+import FooterImg from "../../assets/footer-image.svg";
 import {
     Linkedin,
     Facebook,
@@ -33,7 +34,11 @@ const termHeadings = [
 
 const Footer = () => {
     return (
-        <footer className="bg-linear-gradient text-sm">
+        <footer className="relative bg-linear-gradient text-sm">
+            <div className="absolute bottom-0 right-0">
+                <img src={FooterImg} alt="Footer image" />
+            </div>
+
             <Container className="flex flex-wrap pt-12">
                 <div className="w-1/5">
                     <img src={Logo} alt="Logo" className="h-[50px]" />
