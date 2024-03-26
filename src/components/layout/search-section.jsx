@@ -27,7 +27,7 @@ const trendingNow = [
 
 const SearchSection = () => {
     return (
-        <div className="bg-linear-gradient py-16">
+        <div className="bg-linear-gradient py-16 pt-36">
             <Container>
                 <h1 className="text-2xl font-bold text-background">
                     1,031 IT Jobs For "Chất" Developers
@@ -76,7 +76,7 @@ const SearchSection = () => {
                         <Badge
                             key={index}
                             variant="outline"
-                            className="border-muted-foreground text-lg font-normal text-background"
+                            className="border-muted-foreground text-base font-normal text-background"
                         >
                             {item}
                         </Badge>

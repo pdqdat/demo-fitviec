@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 // Assets
 import Logo from "../../assets/logo-itviec.webp";
 import { ChevronDown } from "lucide-react";
@@ -18,8 +20,18 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "../ui/separator";
 
 const Header = () => {
+    const [isActive, setIsActive] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            window.scrollY > 60 ? setIsActive(true) : setIsActive(false);
+        });
+    });
+
     return (
-        <header className="flex h-[88px] items-center justify-between border-b-2 border-muted-foreground bg-linear-gradient px-40">
+        <header
+            className={`fixed z-10 flex w-full items-center justify-between border-b-2 border-muted-foreground bg-linear-gradient px-8 2xl:px-40 ${isActive ? "h-[60px]" : "h-[88px]"}`}
+        >
             <div className="flex space-x-6">
                 <img src={Logo} alt="Logo" className="w-[108px]" />
 

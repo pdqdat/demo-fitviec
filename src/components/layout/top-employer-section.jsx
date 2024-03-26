@@ -2,7 +2,7 @@
 import Container from "@/components/layout/container";
 import EmployerCard from "@/components/employer-card";
 
-import { EMPLOYERS } from "@/lib/contants";
+import { EMPLOYERS } from "@/lib/constants";
 
 const TopEmployerSection = () => {
     return (
