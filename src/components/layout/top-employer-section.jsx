@@ -1,7 +1,7 @@
 // Components
 import Container from "@/components/layout/container";
 import EmployerCard from "@/components/employer-card";
-
+import JobCard from "../job-card";
 import { EMPLOYERS } from "@/lib/constants";
 
 const TopEmployerSection = () => {
@@ -13,7 +13,7 @@ const TopEmployerSection = () => {
 
             <div className="grid grid-cols-3 gap-6">
                 {EMPLOYERS.map((employer, index) => (
-                    <EmployerCard key={index} employer={employer} />
+                    <JobCard key={index} employer={employer} />
                 ))}
             </div>
         </Container>
